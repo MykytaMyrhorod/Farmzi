@@ -256,6 +256,7 @@ body{
 }
 .about-company__container{
     margin-top: 200px;
+    margin-bottom: 100px;
 }
 .about-company__title{
     margin-bottom: 10px;
@@ -363,6 +364,200 @@ body{
 
 
 
+
+
+
+.services__bg{
+    width: 100%;
+    height: auto;
+    background-color: #E1F4F2;
+}
+.services__title{
+    display: inline-block;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 29.25px;
+}
+.services__title::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #777;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.services__subtitle{
+    margin-bottom: 52px;
+    max-width: 1039px;
+    color: #177165;
+    font-family: Playfair Display;
+    font-size: calc(25px + 23 * ((100vw - 320px) / (1170 - 320)));
+    font-style: normal;
+    font-weight: 400;
+    line-height: 57.6px;
+}
+.services-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 81px;
+}
+.services-block__flower{
+    display: flex;
+    flex-direction: column;
+    max-width: 248px;
+    align-self: center;
+    justify-self: center;
+    height: auto;
+    word-wrap: break-word;
+}
+.flower__img{
+    margin-bottom: 30px;
+}
+.flower__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.flower__title::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #777;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.flower__subtitle{
+    color: #177165;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.75px;
+}
+.services-block__Planting{
+    max-width: 248px;
+    height: auto;
+    word-wrap: break-word;
+    align-self: center;
+    justify-self: center;
+}
+.Planting__img{
+    margin-bottom: 30px;
+    width: 100%;
+}
+.Planting__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 26px;
+    width: auto;
+}
+.Planting__title::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #777;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.Planting__subtitle{
+    color: #177165;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.75px;
+    width: auto;
+}
+.services-block__Rush{
+    max-width: 248px;
+    height: auto;
+    word-wrap: break-word;
+    align-self: center;
+    justify-self: center;
+}
+.Rush__img{
+    margin-bottom: 30px;
+}
+.Rush__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 26px;
+    width: auto;
+}
+.Rush__title::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #777;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.Rush__subtitle{
+    color: #177165;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.75px;
+    width: auto;
+}
+.services-block__Watering{
+    max-width: 248px;
+    height: auto;
+    word-wrap: break-word;
+    align-self: center;
+    justify-self: center;
+}
+.Watering__img{
+    margin-bottom: 30px;
+}
+.Watering__title{
+    margin-bottom: 5px;
+    font-size: 15px;
+    line-height: 26px;
+    width: auto;
+}
+.Watering__title::before{
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #777;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.Watering__subtitle{
+    color: #177165;
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35.75px;
+    width: auto;
+}
+.service__btn{
+    display: inline-block;
+    border: 2px solid #177165;
+    padding: 10px 55px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #177165;
+    font-size: 16px;
+    margin-bottom: 113px;
+}
+.service__btn::after{
+    content: '+';
+    margin-left: 10px;
+}
 
 
 
@@ -493,11 +688,17 @@ body{
     .about-company__subtitle{
         line-height: 40px;
     }
+    .services__subtitle{
+        line-height: 45.6px;
+    }
 }
 @media (max-width: 420px){
     .hero__subtitle{
         font-size: 40px;
         line-height: 55px;
+    }
+    .services__subtitle{
+        line-height: 36.6px;
     }
     .about-company__container{
         margin-top: 100px;
@@ -515,6 +716,9 @@ body{
 }
 @media (min-width: 1170px){
     .about-company__subtitle{
+        font-size: 48px;
+    }
+    .services__subtitle{
         font-size: 48px;
     }
 }
@@ -535,4 +739,55 @@ body{
         margin-left: 0;
     }
 
+}
+@media (max-width: 850px){
+    .services-block{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media(max-width: 500px){
+    .services-block{
+        gap: 20px;
+    }
+    .services__subtitle {
+        margin-bottom: 30px;
+    }
+    .flower__img{
+        margin-bottom: 20px;
+    }
+    .Planting__img{
+        margin-bottom: 20px;
+    }
+    .Rush__img{
+        margin-bottom: 20px;
+    }
+    .Watering__img{
+        margin-bottom: 20px;
+    }
+    .service__btn{
+        display: inline-block;
+        border: 2px solid #177165;
+        padding: 10px 55px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        transform: translateX(0);
+        color: #177165;
+        font-size: 16px;
+        margin-bottom: 113px;
+    }
+}
+@media (max-width: 400px){
+    .flower__subtitle{
+        font-size: 17px;
+    }
+    .Planting__subtitle{
+        font-size: 17px;
+    }
+    .Rush__subtitle{
+        font-size: 17px;
+    }
+    .Watering__subtitle{
+        font-size: 17px;
+    }
 }
